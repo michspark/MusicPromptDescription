@@ -1,0 +1,118 @@
+[
+  {
+    "prompt_number": 1,
+    "prompt": "a dark and sad country instrumental, acoustic guitar, slow, light drums, downtempo melancholic, (70 bpm), depressed,",
+    "classification": {
+      "Mood/Emotion": [
+        "dark",
+        "sad",
+        "melancholic",
+        "depressed"
+      ],
+      "Genre": [
+        "country"
+      ],
+      "Music Theory": [
+        "slow",
+        "downtempo",
+        "70 bpm"
+      ],
+      "Timbre": [
+        "light drums"
+      ],
+      "Instrumentation": [
+        "acoustic guitar"
+      ],
+      "Function": [
+        "instrumental"
+      ]
+    }
+  },
+  {
+    "prompt_number": 2,
+    "prompt": "contemporary r&b, soul jazz, female vocalist, smooth soul, r&b, pop soul, soul, Strong female vocals, funk,",
+    "classification": {
+      "Genre": [
+        "contemporary r&b",
+        "soul jazz",
+        "soul",
+        "r&b",
+        "pop soul",
+        "funk"
+      ],
+      "Timbre": [
+        "smooth",
+        "Strong"
+      ],
+      "Instrumentation": [
+        "female vocalist",
+        "female vocals"
+      ]
+    }
+  },
+  {
+    "prompt_number": 3,
+    "prompt": "a song about losing my keys in the style of amy winehouse",
+    "classification": {
+      "Mood/Emotion": [
+        "losing my keys"
+      ],
+      "Genre": [
+        "amy winehouse"
+      ],
+      "Function": [
+        "a song"
+      ]
+    }
+  },
+  {
+    "prompt_number": 4,
+    "prompt": "Americana, Country, Bluegrass, Melodic, Passionate, Lush, Rhythmic, male vocalist, anthemic, uplifting, pop, playful,",
+    "classification": {
+      "Mood/Emotion": [
+        "Passionate",
+        "uplifting",
+        "playful"
+      ],
+      "Genre": [
+        "Americana",
+        "Country",
+        "Bluegrass",
+        "pop"
+      ],
+      "Music Theory": [
+        "Melodic",
+        "Rhythmic"
+      ],
+      "Timbre": [
+        "Lush"
+      ],
+      "Instrumentation": [
+        "male vocalist"
+      ],
+      "Function": [
+        "anthemic"
+      ]
+    }
+  },
+  {
+    "prompt_number": 5,
+    "prompt": "baroque pop, dreamy pop, boy band, romantic, piano jazz, electric cello, deep house, chillout,",
+    "classification": {
+      "Mood/Emotion": [
+        "romantic"
+      ],
+      "Genre": [
+        "baroque pop",
+        "dreamy pop",
+        "boy band",
+        "piano jazz",
+        "deep house",
+        "chillout"
+      ],
+      "Instrumentation": [
+        "electric cello"
+      ]
+    }
+  }
+]
