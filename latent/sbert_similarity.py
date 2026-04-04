@@ -1,19 +1,18 @@
 from sentence_transformers import SentenceTransformer
 import pandas as pd
 
-# Load model (same as sbert_test.py)
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("all-mpnet-base-v2", device="cuda")
 
 # ── Load data ────────────────────────────────────────────────────────────────
 # Description CSV: row 0 = col headers (truncated UUIDs), row 1 = question text,
 #                  row 2 = Qualtrics import IDs, row 3+ = actual responses
-desc_raw = pd.read_csv("data/survey_description_data.csv", header=None)
+desc_raw = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0403_eng.csv", header=None)
 desc_headers = desc_raw.iloc[0].tolist()          # column names
 desc_data    = desc_raw.iloc[3:].reset_index(drop=True)  # actual responses
 desc_data.columns = desc_headers
 
 # Prompt CSV: url contains full UUID, prompt column has the text
-prompt_df = pd.read_csv("data/survey_prompt_data.csv")
+prompt_df = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_data.csv")
 prompt_df["uuid_full"] = prompt_df["url"].str.extract(r"/songs/([a-f0-9-]+)")
 
 # ── Song columns only (skip metadata columns 0‥17) ──────────────────────────
@@ -56,7 +55,7 @@ for col in song_cols:
 
 # ── Save ──────────────────────────────────────────────────────────────────────
 out_df = pd.DataFrame(records)
-out_path = "latent/prompt_description_similarity.csv"
+out_path = r"C:\Users\MICHA\Codes\MusicPromptDescription\latent\prompt_description_similarity.csv"
 out_df.to_csv(out_path, index=False)
 
 print(f"Saved {len(out_df)} rows -> {out_path}")

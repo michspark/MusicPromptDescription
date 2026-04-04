@@ -1,0 +1,63 @@
+
+=== genre ===
+        filled  not filled
+survey     110          90
+udio       182          18
+  survey: 110/200 (55.0%)
+  udio:   182/200 (91.0%)
+  chi2=63.9396, p=0.0000, Cramer's V=0.3998
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+=== mood/emotion ===
+        filled  not filled
+survey     105          95
+udio        74         126
+  survey: 105/200 (52.5%)
+  udio:   74/200 (37.0%)
+  chi2=9.1003, p=0.0026, Cramer's V=0.1508
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+=== instrumentation ===
+        filled  not filled
+survey     103          97
+udio        81         119
+  survey: 103/200 (51.5%)
+  udio:   81/200 (40.5%)
+  chi2=4.4384, p=0.0351, Cramer's V=0.1053
+  Bonferroni alpha=0.0071 -> not significant
+
+=== timbre ===
+        filled  not filled
+survey      44         156
+udio        35         165
+  survey: 44/200 (22.0%)
+  udio:   35/200 (17.5%)
+  chi2=1.0095, p=0.3150, Cramer's V=0.0502
+  Bonferroni alpha=0.0071 -> not significant
+
+=== function ===
+        filled  not filled
+survey      32         168
+udio        15         185
+  survey: 32/200 (16.0%)
+  udio:   15/200 (7.5%)
+  chi2=6.1720, p=0.0130, Cramer's V=0.1242
+  Bonferroni alpha=0.0071 -> not significant
+
+=== music theory ===
+        filled  not filled
+survey      77         123
+udio        38         162
+  survey: 77/200 (38.5%)
+  udio:   38/200 (19.0%)
+  chi2=17.6232, p=0.0000, Cramer's V=0.2099
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+=== story/narrative/lyrics ===
+        filled  not filled
+survey      65         135
+udio       142          58
+  survey: 65/200 (32.5%)
+  udio:   142/200 (71.0%)
+  chi2=57.8308, p=0.0000, Cramer's V=0.3802
+  Bonferroni alpha=0.0071 -> SIGNIFICANT

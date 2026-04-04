@@ -1,0 +1,172 @@
+rank,song_id,count,mean,std,url,prompt
+1,ee070cac-0af1-4d86-9,1,0.6511,0.0,,"Country pop song, being young and moving on from your past, female vocalist, diva country, motivating, includes guitar solo"
+2,754c7a3c-64af-4a19-8,1,0.621,0.0,,"compressor effect, electronic music, house music, technopop, chiptune, synthwave / electro, male vocalist, 1980s,"
+3,77c467d4-d021-4b6e-b,1,0.5967,0.0,,country song about drinking beer and riding tractor while wearing overalls
+4,42ef4a9a-164f-480e-9,1,0.5886,0.0,,"A song about humanity doomed to end, rock, classic rock, guitar solos, dark ambient, slow rock,"
+5,4e733c89-a6a1-4094-8,1,0.5882,0.0,,"Dream pop, ethereal atmospheric song, about lost love, shoegaze, indie pop, bittersweet,"
+6,a817156f-977c-4a72-8,2,0.5837,0.0164,,"Sad and slow grunge instrumental, 80bpm, 2000s production, (rick rubin), (modern sound),"
+7,b81b00c3-f3c4-4ba7-8,1,0.569,0.0,,"Male vocalist, Northern american music, Country, Regional music, Contemporary country, Contemporary country, Country pop, Melodic, Introspective, Love, Longing, Passionate, Bittersweet"
+8,34c793a1-0af4-469e-9,1,0.5668,0.0,,"a melody gardot style's song, post modern jazz, female voice, double bass and piano, jazz,"
+9,1eccf497-ffe0-4f0d-a,1,0.5545,0.0,,"Progressive rock, dark vibe, heavy guitar, loud drums, male vocalist"
+10,72dda986-55c6-450e-8,1,0.5531,0.0,,"a dark and sad country instrumental, acoustic guitar, slow, light drums, downtempo melancholic, (70 bpm), depressed,"
+11,5de9f530-88d9-44a5-9,1,0.5434,0.0,,"synthwave, funk, saxophone, upbeat, 2019, serene, catchy, ambient, about a summer party, female vocalist,"
+12,f5e3d294-de4a-4be3-9,2,0.5418,0.0569,,"epic film score by hanz zimmer, rich orchestration, hybrid electronic, dark, suspenseful"
+13,8b332c1e-f10e-4afc-a,1,0.5361,0.0,,"synthwave, saxophone, 2024, ambient, beautiful, electronic dance music, synthesizer, melancholic, melodic, male vocalist, about summer fading away,"
+14,e89bff81-fa30-4d94-8,1,0.5096,0.0,,"tv show intro, male vocalist, big band, piano, jazz, swing, standards, up beat, fast"
+15,b7aa837e-a53b-4f8a-9,1,0.5071,0.0,,"Electronic, Funky House, Electro, Electro house, Deep house, Funk, Vocalist"
+16,ae86cd19-fca5-4ad7-b,1,0.5069,0.0,,"punk, bouncy funk pop hit italian folk bombastic feels good"
+17,523ab434-2e54-4441-9,1,0.5044,0.0,,"A song about daily driving exotic cars, hip hop, trap"
+18,94894312-0261-4956-8,2,0.4964,0.0183,,"A song about the greatness of menachem begin. hip hop, 1998, east coast hip hop,"
+19,4e5af4be-1277-4097-9,1,0.4939,0.0,,"Upbeat Reggaeton dance party song with a drop and variety, heavy bass, rythmic, Bad Bunny, feid, daddy yankee, 2023"
+20,876c1749-d348-48e6-a,1,0.4924,0.0,,"Male vocalist, Rock, Alternative metal, Nu Metal, Electronica, Alternative rock, Glitch, Rap rock, Passionate, Bittersweet, Anthemic,"
+21,22c95ed0-8f48-4e40-a,1,0.4923,0.0,,"escaping from a void where I am judged , pop, dark by billie Eilish"
+22,3a357ba5-4c78-432d-8,1,0.49,0.0,,"pop, a song with chinese traditional poems as its lyrics."
+23,b0f6dcc3-7aeb-4d48-9,1,0.4898,0.0,,"a song about working in a print shop in houston texas , houston sticker is the name , hip hop,"
+24,b63b2d28-ca13-4ae8-b,1,0.4841,0.0,,"A song about the foggy autumn morning in the forest with the smell of wet woods and soil,electronic,"
+25,6067225b-504a-46e1-8,1,0.483,0.0,,upbeat eurobeat song as heard in the anime Initial D
+26,6eec1cc9-81f9-40d3-9,1,0.4809,0.0,,"AlienAPI whispering messages into the Human Hosts Brain., hard rock, guitar, male vocalist, heavy metal, electric guitar, album rock,"
+27,4ce5fcbf-3111-4a0d-b,2,0.4804,0.1049,,"upbeat song for motion design portfolio, techno, instrumental no singing"
+28,d2c86c3d-07fc-4390-8,2,0.4774,0.0008,,"A ambient trap song about chilling at the beach during a sunset, electronic, saxophone, synthesizer,"
+29,97674f07-7bc3-404e-9,1,0.4752,0.0,,"epic song about gogeta vs broly, heavy drums, epic guitar, piano, english"
+30,a73408ef-f0f9-4280-8,1,0.4752,0.0,,"russian, bard song, folk song, acoustic guitar, female singer, emotional, 100 bpm"
+31,f87d8dbf-83a9-4c58-a,1,0.4742,0.0,,"Love and loss in north west England , pop rock,"
+32,246bf3fe-a489-4545-a,2,0.4728,0.012,,"synth-pop, 10s beautiful korean idol singer sings. Talks about we are doomed by AGI soon inkorean."
+33,96382602-5e97-430f-9,1,0.4725,0.0,,"Progressive House inspired by Sasha from the 1990s, deep dark melodic ethereal space trance with a heavy driving baseline"
+34,7606dd90-1f55-4f82-8,1,0.4716,0.0,,starts as old school hiphop but morphs into uk drill
+35,6dfa3eea-e6cf-46fb-a,1,0.4707,0.0,,"A song about sexy Annie in Hong Kong , rock, alternative rock, indie rock,"
+36,45aa2509-8554-4bf3-8,1,0.4696,0.0,,"song about rubber ducks in the bath, heavy distorted guitar, deep bass, nu metal, rap rock"
+37,0f2e29c0-780e-45ae-b,1,0.4639,0.0,,"a day in the life of a kickboxing worrier, trap, rap, hiphop"
+38,cdb23f80-6a13-4777-8,1,0.4611,0.0,,"A Song about whining , pop, r&b, vocal, hip hop,"
+39,31e86412-c270-4bcb-8,1,0.4604,0.0,,"punk, bouncy funk pop hit italian folk bombastic feels good"
+40,5d465d7f-d93d-47f3-9,1,0.4586,0.0,,a song about creating a computer vision algorithm in Bach and Beethoven style
+41,115645aa-6751-4e25-8,1,0.453,0.0,,A house song about finding a 20 in an old jacket
+42,9e8106ce-2e4a-450c-8,1,0.4504,0.0,,a fast-paced 90's influenced alt/indie song about tesla departures leaving.
+43,91f9b933-c02b-47df-9,2,0.4502,0.006,,"bubblegum pop about imageboard culture, deep female vocalist alternative, happy, uplifting"
+44,be9d0001-9386-4d1a-b,1,0.4497,0.0,,"four piece classical quartet, somber and pensive, solo vocalist singing about being awake all night"
+45,1c339881-c51b-4318-a,2,0.4478,0.1129,,"female vocalist, guitar, bass guitar, drums (drum set), uptempo, uplifting, anime soundtrack, melodic, j-rock, piano rock, upbeat, catchy, piano rock,"
+46,0a1282d5-b306-49f4-b,1,0.447,0.0,,"A song about programmer named Emmanuel who became disillusioned with the corporate world and became a baker., jazz, soul jazz,"
+47,4cd02c55-36e8-46dd-9,1,0.4463,0.0,,"van halen, led zeppelin, game music, energetic, 90s, something similar to van halens aint talking about love"
+48,20752527-76a9-4e5a-b,1,0.4454,0.0,,"a song inspired by Nicholas Roerich paintings, ambient, locrian mode"
+49,df09d518-7cb4-43d2-b,1,0.4447,0.0,,"melomandiz beats intro, rage phonk beat, playboi carti, mad 808s"
+50,88bf780d-da3b-440d-9,1,0.4444,0.0,,"about an old soul trapped in a vehicle through the centuries, electronic, synthesizer, synth-pop, keyboard, horror, soundtrack Instrumental"
+51,53d73137-83c6-4e4f-a,1,0.4427,0.0,,"A song about humanity doomed to end, rock, classic rock, guitar solos, dark ambient, slow rock,"
+52,1fce4fac-fe02-42f3-9,2,0.4409,0.0914,,"Title is something in the air, like Bonobo, electronic, club, house, dance, jazz, euro house,"
+53,1acbac5c-f315-45df-8,1,0.4394,0.0,,"female vocalist, r&b, alternative r&b, slow beats, hip hop, soul, contemporary r&b,"
+54,84deb4de-d0fb-4e1d-a,2,0.4366,0.1185,,"Cool Jazz, Hard Bop, instrumental, acoustic, improvisation, mellow, energetic, nocturnal, soothing, playful, melodic, piano blues, piano jazz, piano"
+55,fa94bad4-6431-40a7-9,1,0.4364,0.0,,"hard bass drum, masculine male voice, latin, hip hop, raegetton"
+56,3c41851f-03a5-464c-9,2,0.4333,0.0141,,"A song about the benefits of Technology in Africa. , pop, traditional pop, electropop, euro house, dance-pop,"
+57,7536c885-e926-4f7e-b,1,0.4329,0.0,,A romanian song about going home after work. Pop song
+58,6184d460-21d8-4a0c-b,1,0.4327,0.0,,"A song by a boy band about his demons , pop rock,"
+59,959ae3b5-07a9-464c-8,1,0.431,0.0,,"sad song sang by a man with a very nice voice., pop, indie,"
+60,3a5cb7e8-d45f-481e-b,1,0.4266,0.0,,"A viennese song about having eaten way too much. And tipps how to feel better, e.g. drinking Schnaps or Coffee."
+61,85c89132-e0ce-42d5-9,1,0.424,0.0,,"a song about coming home after a long time, pop, indie, bass, japanese rock"
+62,4ae99a8d-f134-4966-a,1,0.4148,0.0,,"Georgia Dobbins and William Garrett's song Please Mr. Postman, beat group, the 60's style"
+63,c21d9593-e7e4-41fe-b,2,0.4146,0.0943,,"Technical Death Metal, Progressive Metal, complex, heavy, male vocalist, melodic, aggressive, angry, energetic, epic, uncommon time signatures, 1995"
+64,9481c38d-df7b-42cc-b,1,0.4123,0.0,,Please Compose a symphony-like piece in style of Anton Bruckner 8th as a Film opening sequence
+65,4fdeb871-5590-435c-8,1,0.4108,0.0,,Minimalist analog electronic music with odd time signatures and abstract melodies
+66,0e4f6e42-e8a1-4618-9,1,0.409,0.0,,"Instrumental orchestral, cinematic music about a girl and her Robot best friend"
+67,8b21762a-c0c3-449e-8,1,0.4084,0.0,,old country song about crowdstrike making all the computer go blue screen of death
+68,ae81034e-2b91-4d08-8,1,0.4078,0.0,,"screaming powerful dramatic female vocalist, Symphonic, epic, warlike and martial, rhythmic and percussive, grandiose,"
+69,33858c28-6c40-43d6-9,1,0.406,0.0,,"a progressive rock ballad, like we are in the 70s"
+70,1fc27a56-36f6-4a2b-9,1,0.405,0.0,,"A german song about what elements you need to form proper sentences, electronic, electro,"
+71,788859af-9004-4587-b,1,0.4043,0.0,,"Electro pop, male voice, melodic, soul, hip hop rnb and dance hall,"
+72,0c1cecb1-1601-43cc-8,1,0.4037,0.0,,A song about board games dungeons and dragons and fantasy style music
+73,304f77ae-6961-4c73-b,1,0.4032,0.0,,"synth-pop, house, about chicken on a stick and fish oil"
+74,82297794-bd7d-4718-9,2,0.4019,0.0505,,Please Compose a symphony-like piece in style of Anton Bruckner 8th as a Film music for a bike-chase
+75,837f7d1b-23e2-4a0f-8,1,0.3957,0.0,,"Song about the power of love of a couple, opera, male voice"
+76,e66caf62-70ce-418a-8,1,0.394,0.0,,"hip hop, song about having to eat the wrong brand of baked beans"
+77,43eef8c0-03fb-483c-8,1,0.3939,0.0,,"A song about a smooth trombone solo, classical, orchestral, symphony, modern classical,"
+78,7a83cea8-c6f4-4944-8,1,0.3908,0.0,,"pop, female vocalist, sarcastic, breakup, high school girl calls her ex-boyfriend melodramatic"
+79,c243ba53-0eea-4dfd-b,1,0.3892,0.0,,"Happy friendly gay pickle whose catchphrase is “I’m a pickle hear me roar”, heavy metal,"
+80,e374a9d0-706d-4bf3-a,1,0.389,0.0,,"Heavy Metal Metellica-style version of Love Me tender with original lyrics, and sung for Astrid."
+81,d8545371-3d1e-4271-8,1,0.388,0.0,,"A song about fear of the speed of change future shock, acoustic guitar, lo-fi, female vocalist, Tracy Chapman"
+82,db477bec-7b99-4ca2-8,1,0.386,0.0,,"A song about a man named Dude working for the county for feline emotional well being., blues, delta blues,"
+83,05c85698-35f9-4ca9-a,1,0.3837,0.0,,A jazz funk song about 4 middle aged men getting funky in New York City
+84,0244da5b-f3c0-49b4-b,1,0.3794,0.0,,A rap song in the style of Eminem with harpsichord. Fast 90s rap
+85,325c3403-d7f7-4fa0-8,1,0.3787,0.0,,"melancholic, duet female, rock, heavy metal rock, heavy style, guitar, male, girl, children"
+86,86b81fdf-9b70-4200-a,2,0.3787,0.1431,,"A song about going to the bar Oskars, alternative rock/pop rock,"
+87,9a2bd396-3954-4d40-b,1,0.3779,0.0,,"guitar jazz, old french singer with south accent, sad ballade"
+88,65239b62-1cec-4b3a-9,2,0.3773,0.0478,,"A song about money, women, rockstar lifestyle, in the style of Playboi Carti"
+89,479be710-4ceb-4509-8,1,0.3766,0.0,,"a song about my dog, jazz, swing, vocal jazz, easy listening,"
+90,2ec2f5f9-407c-41ea-a,1,0.3752,0.0,,The rebasing blues. A song about a common software development issue. Modern electric blues.
+91,566f7399-846c-4579-a,2,0.3751,0.0686,,A song about a tech consultancy called Red Badger. In the style of T bone walker
+92,42f15631-a541-4b30-8,1,0.3735,0.0,,"rock, pop rock, drums (drum set), classic rock, guitar, bass guitar, 80's, male vocalist, energetic, classic hard rock,"
+93,1e28722f-2c5c-474e-a,1,0.3705,0.0,,"Post-Bop, Jazz Fusion, instrumental, technical, melodic, warm, passionate, energetic, playful, guitar, archtop guitar"
+94,e0d3ac24-3ea6-4a85-a,1,0.3661,0.0,,"50s pop song about the Tim's hell wagon, a flat black hemi powered monster"
+95,2b52b4c3-c6fb-47b5-b,1,0.3653,0.0,,"a bright fun pop song jingle with female sung lyrics ""lonsborough motor service - right here for you"""
+96,a5ac307b-e75d-47b1-9,1,0.3645,0.0,,"Grime, fast-paced, energetic, urban, aggressive, gritty, raw, intense, rhythmic, dynamic"
+97,56487772-7530-4ead-a,1,0.3618,0.0,,a song about losing my keys in the style of amy winehouse
+98,346756fd-269e-4421-8,2,0.3594,0.077,,"a song about the beauty of a multicultural festival, techno"
+99,89fe259f-467e-4f79-9,1,0.3581,0.0,,A psychedelic tinged post-punk song about destroying Bradford pear trees to protect the biodiversity of our ecosystem
+100,2c080e35-5332-4784-a,2,0.3576,0.1044,,Song about total eclipse of sun using music of Louis Capaldi someone you love song
+101,754e03f6-9cc8-4deb-b,2,0.3574,0.0291,,"A song about a friend named Alf, who is in love again. Being 49 year old"
+102,7279ca60-c53e-4913-a,1,0.3553,0.0,,"60s baroque pop about Mister Muffin, whimsical, britpop, male vocals, backing vocals"
+103,04a39cf5-a7c3-4d9b-8,1,0.3511,0.0,,a song about Mark who feasts like a king. Sax solo. Blues.
+104,d2a0689f-4bd9-496a-b,1,0.3508,0.0,,300hz vibe Big Rave HOUSE -meditation Festival House Music with Choir Vocals
+105,a0ca57ef-9516-411f-a,1,0.3495,0.0,,"a song about the serenity of early morning fishing, techno, ambient,"
+106,6fdab3ec-7a58-4272-8,1,0.3465,0.0,,"psychedelic indie pop, sunset chill vibes, counter culture mixed with bossa nova"
+107,61375a85-29d0-4b45-9,1,0.3462,0.0,,"A sci-fi epic movie theme about a space pirate named “Vilde”, synth-pop,"
+108,3f9b3ba7-7b13-4d04-8,1,0.3456,0.0,,"Theme tune for the Game of Beef board-game, vocal, tv themes,"
+109,d69d66d4-df72-4002-8,1,0.3432,0.0,,"Amazing Grace, gospel, r&b, emotional, buildup, epic ending, orchestra, high violins, brass, film score, triumphant,"
+110,9a4d75e7-de00-4931-9,2,0.342,0.2399,,A 90s hip hop rap about how fried chicken is the best food on the planet
+111,f8439571-23e6-4c8a-9,1,0.3412,0.0,,"hip hop, hardcore hip hop, gangsta rap, east coast rap, west coast hip hop,"
+112,8235499a-b4cf-4189-9,1,0.3379,0.0,,"A german song about what elements you need to form proper sentences, electronic, electro,"
+113,1fcc61c5-7033-469e-9,1,0.335,0.0,,"A Melodic drill/jersey club song that samples G-Funk. (Minimoog voyager synth, analog synthesizer, Sampling, G-Funk Piano, laid-back)."
+114,9a30a0c9-b192-4113-b,1,0.3324,0.0,,"A singer songwriter war protest song, seventies style, about a manicure set"
+115,bec6e67b-3c7f-4554-9,1,0.3316,0.0,,A music replicating Italian new wave genre of the 80’s as it was Litfiba albums like “17 re” or “dsaparecido”.
+116,d2bec18a-bac3-48cb-b,2,0.3292,0.0903,,"1985, funk, dance-pop, with male vocals in the style of Michael Jackson,"
+117,bed541d5-46b8-4faa-b,1,0.328,0.0,,an r and b song about living in the countryside
+118,be7b3ab7-8a50-4437-8,1,0.3228,0.0,,tame impala song about the whole world creating music together
+119,f190fc46-b387-4437-a,1,0.32,0.0,,"Make a song about a summer day, but make it bluesy with a little bit of hip-hop flare to it"
+120,9c7e479a-5c4d-46d9-8,1,0.319,0.0,,A song about a secret I must keep style Norah jones
+121,9a496feb-6a67-4f22-a,2,0.3182,0.0474,,"pop rock, electronic, rock, male rock lead, synth-pop, male vocalist, catchy chorus"
+122,12c3b33c-37c3-42e9-b,2,0.3142,0.0891,,"A song about April eight 2024 total solar eclipse and biblical conspiracy , hip hop,"
+123,5583d3b7-8692-4c18-8,1,0.3122,0.0,,A Broadway musical about a duck tolling retriever named “Stryker” and two ginger cats named Chezzy and Scholes
+124,d2cf4cdf-f303-4ef9-9,2,0.3117,0.0841,,"a song about a cat plotting to take over the world ,electronic, punk"
+125,21ee8bb8-76c4-41d2-b,1,0.311,0.0,,"electronic, mixer boss bx 8, tech, 4/4 140 BMP, trance"
+126,63da007b-14c8-431d-a,1,0.3089,0.0,,"a song about the depth of a grandparent's advice, heavy metal"
+127,c7af0ea9-f546-4f26-b,1,0.3058,0.0,,"Anthem in Finnish for the Nomadic Academy of Experimental Arts based in Harakka island, Helsinki Finland."
+128,97e26fe2-d45a-46b2-8,1,0.2969,0.0,,"an electronic rock, downtempo, art rock dark song about ending of humanity"
+129,0cd8226a-a270-4165-a,2,0.2933,0.0614,,a country song sung by a man about shopping for a carpet cleaner that will remove cat fur from carpet
+130,e7de29c9-e9dd-4a06-a,1,0.2896,0.0,,"baroque pop, dreamy pop, boy band, romantic, piano jazz, electric cello, deep house, chillout,"
+131,291b2f9c-c41b-4ab8-9,1,0.2837,0.0,,a jimmy buffet style tropical song about two cats lili and boomer enjoying the tradewinds and listening to the birds
+132,b1c7f9c0-da77-440b-8,1,0.2824,0.0,,A Beatles style song about two little kittens named rookie and Coco
+133,54f0f9eb-f14f-4d8d-b,1,0.2821,0.0,,"A song that will sooth my baby to sleep , blues, piano blues,"
+134,fb21d861-9397-4126-8,1,0.2771,0.0,,"A song about the love between a human and an artificial intelligence, rock ballad"
+135,e89bac5b-3b92-4554-b,1,0.2757,0.0,,"rock, about a friend named Alf who is in love again at 49 years old"
+136,04834f9a-eb2e-48b4-9,1,0.2753,0.0,,"A folk rock song about three working cocker spaniels name “Abby, Billie, and Punky”"
+137,cc598c82-8126-4cdf-9,1,0.2743,0.0,,2000s 90s playstation jungle dnb glitch with ethereal jungle pads amen break
+138,32eeb9c6-e9d0-4ff1-8,1,0.2738,0.0,,"A viennese song about having eaten way too much. And tipps how to feel better, e.g. drinking Schnaps or Coffee."
+139,af1cb15b-e547-4e02-8,1,0.2717,0.0,,"hip hop, electronic, synthesizer, 2020, upbeat, serene, male vocalist, catchy, beautiful, melodic, uptempo, about amazing feeling of a theme park,"
+140,5de77170-9628-498c-8,1,0.265,0.0,,"acoustic guitar, mandolin, piano, acoustic bass, percussion, bossa nova, female singer,"
+141,20965396-7e93-4354-8,1,0.2616,0.0,,"A fun 60's cafeteria, fun and upbeat, twist, in the style of: Elvis Presley, Chubby Checker., rock and roll,"
+142,75bc4c3d-4d24-4d21-a,1,0.2611,0.0,,"Deep Electro House, amazing vocals, amazing voice, Uplifting, Futuristic, electropop, Complextro, 2024"
+143,df0117f3-743c-460c-9,1,0.2593,0.0,,"male vocalist, concept album, hard rock, warm, in the style of green day"
+144,e0aea9d2-f3fe-4e97-a,2,0.2541,0.0321,,"write a song about speed running banjo kazooie on the nintendo 64, rare, male vocalist, rhythmic, rap"
+145,4edf7524-0d23-48f2-9,1,0.252,0.0,,Write a melodic yet comedic song with sombre tones about eating lots of sausage
+146,957d1ef7-7bd1-4d9a-a,1,0.2466,0.0,,"a song about forgiving someone that wronged you, pop, funk,"
+147,92374983-b2b0-41a7-b,1,0.2434,0.0,,"old school soul, deep soul, traditional black gospel, r&b/soul, motown, southern soul,"
+148,c03a69e7-7bcb-4c85-b,1,0.2424,0.0,,"Song about I can shake but can’t bake , Rock Musical, Standards, 1980s, duet"
+149,924be17b-f5f1-4628-9,1,0.2372,0.0,,"the smiths, morrissey, post-punk, jangle pop, indie, 80s, minor, fast, alternative rock, guitar, rock"
+150,8399844f-3c3d-44c7-b,1,0.2361,0.0,,"Add male vocalist with Russian accent. A screaming incoherently punk song called ""5 minutes with Derrick"""
+151,77056edb-735f-4b6c-a,1,0.2315,0.0,,"A day in the life of a professional imaginary friend, indie pop, twee pop"
+152,93a18e93-3e7e-4dfb-9,1,0.229,0.0,,"Americana, Country, Bluegrass, Melodic, Passionate, Lush, Rhythmic, male vocalist, anthemic, uplifting, pop, playful,"
+153,2f52deb7-1947-4e11-9,1,0.2249,0.0,,a 2000s emo song written from the perspective of Elon Musk about getting dumped by Grimes
+154,0d11dd6d-73de-4101-a,1,0.2226,0.0,,write a slow down temp catchy riff that is heavy and easy to hum and tuned to c standard
+155,43d604bc-f7ba-45f9-a,1,0.2135,0.0,,"Lara my mother in law, smoking benson hedges in Loveland Colorado. Loves coors light and Taylor’s port. , country, oldies,"
+156,652ed6ff-5366-4dea-9,2,0.2124,0.0015,,"528hz healing frequency enlightenment awakening, sunrise, new age, meditative, house/pop,"
+157,7e425ed4-399b-4c72-a,2,0.211,0.2802,,"rock, a teen age love affair in the style of Jim Steinman with heavy piano chords"
+158,55300023-5c40-490e-9,1,0.2017,0.0,,A big band song about how Eric Clancy is always right about AI
+159,6cff0016-0d2e-4199-9,1,0.1989,0.0,,"acoustic guitar, acoustic rock, male vocalists, blues rock, fingerstyle, singer-songwriter, folk-pop, electric guitar, pop rock, classic rock, contemporary pop/rock,"
+160,ee0aa1b5-2bb6-4770-a,2,0.19,0.3613,,"rock, alternative rock, male vocalist, drums (drum set), keyboard, energetic, passionate, melodic, heavy,"
+161,122a5bd5-7657-4161-a,1,0.181,0.0,,"Train the Trainers _ AI Summer camp , pop, r&b,"
+162,8760d63e-0eab-4d6e-9,1,0.1786,0.0,,jingle about a story writing service in style of Elvis preslley
+163,858415cc-1335-476e-a,1,0.1672,0.0,,Compose a rhyme or song on the prevention of Ringworm
+164,bc7c0d0b-71ae-4afe-8,1,0.1637,0.0,,"Create music with k pop i dol newjeans style, and a meowing back groubd sound for a cute touch."
+165,25e7176b-dcd9-4b4b-8,1,0.1582,0.0,,"east coast hip hop, hip hop rnb and dance hall,"
+166,58339466-2de5-4409-b,1,0.1425,0.0,,"old school soul, deep soul, traditional black gospel, r&b/soul, motown, southern soul,"
+167,189707c6-89e6-4846-9,1,0.1338,0.0,,"Riding a bike, delicately smelling the fragrance of osmanthus flowers."
+168,814b22e6-1017-444c-b,1,0.129,0.0,,Ariel de zeemeermin is ride out captain on her motorbike
+169,0825d51f-0845-4009-a,1,0.0887,0.0,,a sentimental song about love that's lost and hope that it can be found again
+170,9a12553b-7ae1-4e35-9,1,0.0555,0.0,,Carrie is off school sick with a bad cough but can play PlayStation
+171,c2eccd6c-3c7f-4e67-9,1,0.047,0.0,,"There’s Hiroshima-style okonomiyaki, but there is no such thing as ‘Hiroshimayaki., blues,"
