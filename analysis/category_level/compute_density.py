@@ -9,9 +9,6 @@ Usage (CLI):
     python compute_density.py path/to/input.csv
     python compute_density.py path/to/input.csv --output path/to/output.csv
 
-Usage (import):
-    from compute_density import compute_density
-    output_path = compute_density("path/to/input.csv")
 """
 
 import argparse
