@@ -1,0 +1,75 @@
+=================================================================
+CROSS-LANGUAGE DENSITY ANALYSIS: Welch's t-test + Glass's Delta
+Korean respondents:  268
+English respondents: 996
+Bonferroni-corrected alpha = 0.05 / 7 = 0.0071
+Control group (denominator for Glass's delta): Korean
+=================================================================
+
+--- genre ---
+  Korean:  mean=0.1080, std=0.1195, n=268
+  English: mean=0.1444, std=0.1549, n=996
+  diff (eng - kor): +0.0364
+  Welch's t=-4.1358, p=0.0000
+  Glass's delta=0.3044
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+--- mood/emotion ---
+  Korean:  mean=0.1614, std=0.1594, n=268
+  English: mean=0.1332, std=0.1827, n=996
+  diff (eng - kor): -0.0282
+  Welch's t=2.4896, p=0.0131
+  Glass's delta=-0.1769
+  Bonferroni alpha=0.0071 -> not significant
+
+--- instrumentation ---
+  Korean:  mean=0.1657, std=0.1851, n=268
+  English: mean=0.2167, std=0.1993, n=996
+  diff (eng - kor): +0.0510
+  Welch's t=-3.9336, p=0.0001
+  Glass's delta=0.2752
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+--- timbre ---
+  Korean:  mean=0.0898, std=0.1256, n=268
+  English: mean=0.1148, std=0.1522, n=996
+  diff (eng - kor): +0.0250
+  Welch's t=-2.7575, p=0.0060
+  Glass's delta=0.1989
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+--- function ---
+  Korean:  mean=0.1185, std=0.1632, n=268
+  English: mean=0.0770, std=0.1401, n=996
+  diff (eng - kor): -0.0415
+  Welch's t=3.8004, p=0.0002
+  Glass's delta=-0.2541
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+--- music theory ---
+  Korean:  mean=0.1348, std=0.1679, n=268
+  English: mean=0.1722, std=0.1969, n=996
+  diff (eng - kor): +0.0374
+  Welch's t=-3.1136, p=0.0020
+  Glass's delta=0.2226
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+--- story/narrative/lyrics ---
+  Korean:  mean=0.2031, std=0.2525, n=268
+  English: mean=0.1197, std=0.1729, n=996
+  diff (eng - kor): -0.0834
+  Welch's t=5.0979, p=0.0000
+  Glass's delta=-0.3305
+  Bonferroni alpha=0.0071 -> SIGNIFICANT
+
+
+=== SUMMARY TABLE ===
+                        korean_mean  english_mean    diff  t_stat  p_value  glass_delta  significant
+category                                                                                            
+genre                        0.1080        0.1444  0.0364 -4.1358   0.0000       0.3044         True
+mood/emotion                 0.1614        0.1332 -0.0282  2.4896   0.0131      -0.1769        False
+instrumentation              0.1657        0.2167  0.0510 -3.9336   0.0001       0.2752         True
+timbre                       0.0898        0.1148  0.0250 -2.7575   0.0060       0.1989         True
+function                     0.1185        0.0770 -0.0415  3.8004   0.0002      -0.2541         True
+music theory                 0.1348        0.1722  0.0374 -3.1136   0.0020       0.2226         True
+story/narrative/lyrics       0.2031        0.1197 -0.0834  5.0979   0.0000      -0.3305         True

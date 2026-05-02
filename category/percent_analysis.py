@@ -12,7 +12,7 @@ CATEGORIES = [
     "story/narrative/lyrics",
 ]
 
-survey_path = "../data/0403_eng_categories.csv"
+survey_path = "../data/0414_korean_categories.csv"
 udio_path = "../data/udio_categorized_gpt.csv"
 
 survey_df = pd.read_csv(survey_path)

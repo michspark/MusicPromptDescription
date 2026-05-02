@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from scipy.stats import ttest_ind
 
+from compute_density import compute_density
+
 CATEGORIES = [
     "genre",
     "mood/emotion",
@@ -12,9 +14,9 @@ CATEGORIES = [
     "story/narrative/lyrics",
 ]
 
-survey_path = "../data/0403_eng_categories_density.csv"
+survey_path = compute_density("../data/0428_eng_categories.csv")
 udio_path = "../data/udio_categorized_gpt_density.csv"
-output_path = "../data/density_ttest_results.txt"
+output_path = "../data/density_test_results.txt"
 
 survey_df = pd.read_csv(survey_path)
 udio_df = pd.read_csv(udio_path)

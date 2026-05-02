@@ -6,7 +6,7 @@ model = SentenceTransformer("all-mpnet-base-v2", device="cuda")
 # ── Load data ────────────────────────────────────────────────────────────────
 # Description CSV: row 0 = col headers (truncated UUIDs), row 1 = question text,
 #                  row 2 = Qualtrics import IDs, row 3+ = actual responses
-desc_raw = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0403_eng.csv", header=None)
+desc_raw = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0428_eng.csv", header=None)
 desc_headers = desc_raw.iloc[0].tolist()          # column names
 desc_data    = desc_raw.iloc[3:].reset_index(drop=True)  # actual responses
 desc_data.columns = desc_headers
