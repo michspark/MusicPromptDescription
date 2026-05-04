@@ -73,7 +73,7 @@ udio_df['uuid'] = udio_df['url'].apply(
 
 # English description (Qualtrics: 헤더 3줄 -> 1,2행 스킵)
 desc_df = pd.read_csv(
-    r'C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english.csv',
+    r'C:\Users\MICHA\Codes\MusicPromptDescription\data\english.csv',
     skiprows=[1, 2]
 )
 uuid_pattern = re.compile(r'^[0-9a-f]{8}-')
@@ -81,7 +81,7 @@ uuid_cols = [c for c in desc_df.columns if uuid_pattern.match(c)]
 
 # vocab_udio_prompt: count >= 5 단어 목록
 vocab_df = pd.read_csv(
-    r'C:\Users\MICHA\Codes\MusicPromptDescription\analysis\word_level\vocab_udio_prompt.csv'
+    r'C:\Users\MICHA\Codes\MusicPromptDescription\results\tables\vocab_udio_prompt.csv'
 )
 target_words = set(vocab_df[vocab_df['count'] >= 5]['word'].tolist())
 print(f"  분석 대상 단어 수 (count >= 5): {len(target_words)}")
@@ -253,7 +253,7 @@ chi2_flat_df_10 = chi2_flat_df[
 # 6. 결과 출력 및 저장
 # ============================================================
 import os
-output_dir = r'C:\Users\MICHA\Codes\MusicPromptDescription\analysis\word_level'
+output_dir = r'C:\Users\MICHA\Codes\MusicPromptDescription\results\tables'
 
 # --- Survival Rate 출력 ---
 print(f"\n{'='*65}")
@@ -287,9 +287,9 @@ for _, row in chi2_flat_df_10.iterrows():
     print(f"  {row['prompt_word']:<14} {row['desc_word']:<20} {row['chi2']:>8.2f}  {row['p_value']:>8.4f}  {int(row['desc_with']):>9}")
 
 # --- CSV 저장 ---
-survival_out = os.path.join(output_dir, 'analysis_survival_rate.csv')
-chi2_out = os.path.join(output_dir, 'analysis_chi2.csv')
-chi2_flat_out = os.path.join(output_dir, 'analysis_chi2_sorted_by_chi2.csv')
+survival_out = os.path.join(output_dir, 'survival_rate.csv')
+chi2_out = os.path.join(output_dir, 'chi2_results.csv')
+chi2_flat_out = os.path.join(output_dir, 'chi2_results_sorted.csv')
 
 survival_df.to_csv(survival_out, index=False, encoding='utf-8-sig')
 chi2_df.to_csv(chi2_out, index=False, encoding='utf-8-sig')

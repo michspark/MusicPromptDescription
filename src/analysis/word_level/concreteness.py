@@ -5,9 +5,9 @@ import pandas as pd
 from scipy.stats import wilcoxon, spearmanr
 
 BASE = r"C:\Users\MICHA\Codes\MusicPromptDescription"
-DATA_PATH = os.path.join(BASE, "analysis", "vector", "prompt_description_similarity.csv")
-CONC_PATH = os.path.join(BASE, "analysis", "word_level", "Concreteness_ratings_Brysbaert_et_al_BRM.txt")
-OUT_CSV   = os.path.join(BASE, "analysis", "word_level", "concreteness_scores.csv")
+DATA_PATH = os.path.join(BASE, "results", "tables", "similarity_scores.csv")
+CONC_PATH = os.path.join(BASE, "src", "analysis", "word_level", "Concreteness_ratings_Brysbaert_et_al_BRM.txt")
+OUT_CSV   = os.path.join(BASE, "results", "tables", "concreteness_scores.csv")
 
 nlp = spacy.load("en_core_web_sm")
 for w in {"song", "music", "track", "sound", "audio", "feel", "make", "hear", "listen", "like", "vibe"}: # domain-specific stop words to ignore in concreteness scoring

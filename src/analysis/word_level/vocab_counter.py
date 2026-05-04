@@ -59,7 +59,7 @@ print(f"  Udio prompt 수: {len(udio_prompts)}")
 # --- (B) English description 데이터 (Qualtrics 형식: 헤더 3줄) ---
 print("English description 데이터를 불러오는 중...")
 desc_df = pd.read_csv(
-    r'C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english.csv',
+    r'C:\Users\MICHA\Codes\MusicPromptDescription\data\english.csv',
     skiprows=[1, 2]   # Qualtrics: row1=설명, row2=ImportId -> 스킵
 )
 
@@ -109,7 +109,7 @@ for rank, (word, count) in enumerate(get_top_n_words(desc_keywords, TOP_N), 1):
 # 6. CSV로 저장
 # ==========================================
 import os
-output_dir = r'C:\Users\MICHA\Codes\MusicPromptDescription\analysis\word_level'
+output_dir = r'C:\Users\MICHA\Codes\MusicPromptDescription\results\tables'
 
 udio_result = pd.DataFrame(get_top_n_words(udio_keywords, n=len(Counter(udio_keywords))),
                            columns=['word', 'count'])
