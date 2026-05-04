@@ -1,7 +1,3 @@
-```{r}
-# ============================================================
-# CHUNK 1: Libraries
-# ============================================================
 library(lme4)
 library(lmerTest)
 library(emmeans)
@@ -9,45 +5,30 @@ library(ggplot2)
 library(dplyr)
 library(patchwork)
 
-# ============================================================
-# CHUNK 2: Load data
-# ============================================================
+# Load Data
 df <- read.csv("C:/Users/MICHA/Codes/MusicPromptDescription/data/long_korean_eng.csv")
-head(df)
 
-# ============================================================
-# CHUNK 3: Fit models
-# ============================================================
-df$corpus   <- relevel(factor(df$corpus),   ref = "english")
+# Fit Models
+df$corpus <- relevel(factor(df$corpus), ref = "english")
 df$category <- relevel(factor(df$category), ref = "genre")
-
-# Verify
-print(table(df$corpus))
-print(levels(df$corpus))  # Should be: "english" "korean"
 
 # GLMM - Presence
 m1 <- glmer(presence ~ corpus * category + (1 | text_id) + (1 | song_id),
             data = df, family = binomial,
             control = glmerControl(optimizer = "bobyqa",
                                    optCtrl = list(maxfun = 100000)))
-summary(m1)
 
 # LMM - Density
 m2 <- lmer(density ~ corpus * category + (1 | text_id) + (1 | song_id), data = df)
-summary(m2)
 
-# ============================================================
-# CHUNK 4: Extract emmeans & build plot dataframes
-# ============================================================
+# Extract emmeans & build plot dataframes
 levels_order <- c("Genre", "Story", "Instrumentation", "Mood", "Theory", "Timbre", "Function")
+
 
 # --- m1: Presence ---
 emm_m1 <- as.data.frame(emmeans(m1, ~ corpus * category, type = "response"))
 colnames(emm_m1)[grepl("LCL|lower.CL", colnames(emm_m1))] <- "LCL"
 colnames(emm_m1)[grepl("UCL|upper.CL", colnames(emm_m1))] <- "UCL"
-
-# Verify corpus values BEFORE mutating
-print(unique(emm_m1$corpus))  # Should be: "english" "korean"
 
 df_plot_m1 <- emm_m1 %>%
   mutate(
@@ -76,9 +57,7 @@ df_plot_m2 <- emm_m2 %>%
     Corpus   = factor(tools::toTitleCase(as.character(corpus)),   levels = c("English", "Korean"))
   )
 
-# ============================================================
-# CHUNK 5: Plot
-# ============================================================
+# Plot
 fill_colors <- c("English" = "#60318C", "Korean" = "#318C57")
 
 plot_presence <- ggplot(df_plot_m1, aes(x = Category, y = Value, fill = Corpus)) +
@@ -121,8 +100,5 @@ final_plot <- (plot_presence | plot_density) +
         legend.title = element_text(face = "bold"),
         legend.text = element_text(size = 13))
 
-print(final_plot)
 
-ggsave("Side_by_Side_Wide_kr.png", plot = final_plot, width = 15, height = 7, dpi = 300)
-```
-
+ggsave("C:/Users/MICHA/Codes/MusicPromptDescription/plots/korean_english.png", plot = final_plot, width = 15, height = 7, dpi = 300)

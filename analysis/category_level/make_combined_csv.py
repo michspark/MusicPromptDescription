@@ -2,11 +2,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-BASE = Path(__file__).parent.parent / "data"
-
-PROMPT_DENSITY   = BASE / "udio_sample_categories_density.csv"
-DESC_DENSITY     = BASE / "0428_eng_categories_density.csv"
-KOREAN_DENSITY   = BASE / "0428_korean_categories_density.csv"
+PROMPT_DENSITY   =  r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_categories_density.csv"
+DESC_DENSITY     = r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english_categories_density.csv"
 
 CATEGORIES = [
     "genre", "mood/emotion", "instrumentation",
@@ -39,14 +36,13 @@ def to_long(df: pd.DataFrame, corpus: str, song_id_col: str, prefix: str, trunca
 
 prompt_df  = pd.read_csv(PROMPT_DENSITY)
 desc_df    = pd.read_csv(DESC_DENSITY)
-korean_df  = pd.read_csv(KOREAN_DENSITY)
 
 long_df = pd.concat([
     to_long(prompt_df,  "prompt",      "song_id",      "p", truncate_id=20),
     to_long(desc_df,    "description", "problem_hash", "d"),
 ], ignore_index=True)
 
-out_path = BASE / "long_combined.csv"
+out_path = r"C:\Users\MICHA\Codes\MusicPromptDescription\data\long_combined.csv"
 long_df.to_csv(out_path, index=False)
 print(f"Saved {len(long_df):,} rows -> {out_path}")
 print(f"  prompt rows     : {(long_df.corpus == 'prompt').sum():,}")

@@ -5,13 +5,12 @@ import pandas as pd
 from scipy.stats import wilcoxon, spearmanr
 
 BASE = r"C:\Users\MICHA\Codes\MusicPromptDescription"
-DATA_PATH = os.path.join(BASE, "latent", "prompt_description_similarity.csv")
-CONC_PATH = os.path.join(BASE, "vocab", "Concreteness_ratings_Brysbaert_et_al_BRM.txt")
-OUT_CSV   = os.path.join(BASE, "vocab", "concreteness_scores.csv")
+DATA_PATH = os.path.join(BASE, "analysis", "vector", "prompt_description_similarity.csv")
+CONC_PATH = os.path.join(BASE, "analysis", "word_level", "Concreteness_ratings_Brysbaert_et_al_BRM.txt")
+OUT_CSV   = os.path.join(BASE, "analysis", "word_level", "concreteness_scores.csv")
 
-# ── spaCy (same settings as vocab_analysis.py) ────────────────────────────────
 nlp = spacy.load("en_core_web_sm")
-for w in {"song", "music", "track", "sound", "audio", "feel", "make", "hear", "listen", "like", "vibe"}:
+for w in {"song", "music", "track", "sound", "audio", "feel", "make", "hear", "listen", "like", "vibe"}: # domain-specific stop words to ignore in concreteness scoring
     nlp.vocab[w].is_stop = True
 
 def lemmatize(text):
@@ -27,7 +26,6 @@ def lemmatize(text):
             merged.append(tokens[i]); i += 1
     return merged
 
-# ── Concreteness norms ────────────────────────────────────────────────────────
 conc_dict = dict(zip(
     pd.read_csv(CONC_PATH, sep="\t")["Word"].str.lower(),
     pd.read_csv(CONC_PATH, sep="\t")["Conc.M"],
@@ -38,7 +36,6 @@ def score(text):
     rated = [conc_dict[w] for w in tokens if w in conc_dict]
     return float(np.mean(rated)) if rated else None, (len(rated)/len(tokens) if tokens else 0.0)
 
-# ── Data ──────────────────────────────────────────────────────────────────────
 df = pd.read_csv(DATA_PATH).dropna(subset=["prompt", "description", "similarity"])
 
 prompt_scores = df.drop_duplicates("song_id")[["song_id", "prompt"]].copy()
@@ -50,14 +47,12 @@ df = df.dropna(subset=["prompt_conc", "desc_conc"])
 
 df[["song_id", "respondent", "prompt_conc", "prompt_cov", "desc_conc", "desc_cov", "similarity"]].to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
 
-# ── Song-level aggregation ────────────────────────────────────────────────────
 song = df.groupby("song_id").agg(
     prompt_conc=("prompt_conc", "first"),
     desc_conc=("desc_conc", "mean"),
     similarity=("similarity", "mean"),
 ).reset_index()
 
-# ── Stats ─────────────────────────────────────────────────────────────────────
 W, p_w = wilcoxon(song["prompt_conc"], song["desc_conc"])
 diff    = song["desc_conc"] - song["prompt_conc"]
 r_pa, p_pa = spearmanr(song["prompt_conc"], song["similarity"])

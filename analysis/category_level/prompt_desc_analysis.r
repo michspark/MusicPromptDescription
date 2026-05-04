@@ -5,6 +5,7 @@ library(ggplot2)
 library(dplyr)
 library(patchwork)
 
+# Load Data
 df <- read.csv("C:/Users/MICHA/Codes/MusicPromptDescription/data/long_combined.csv")
 df$corpus   <- relevel(factor(df$corpus),   ref = "description")
 df$category <- relevel(factor(df$category), ref = "genre")
@@ -132,8 +133,5 @@ final_plot <- (plot_presence | plot_density) +
 # ---------- Display + save ----------
 print(final_plot)
 
-ggsave("Side_by_Side_Wide.png", plot = final_plot,
-       width = 14, height = 6, dpi = 300)
-
-ggsave("figure_1.png", plot = final_plot,
-       width = 8.5, height = 4.5, dpi = 300)
+ggsave("C:/Users/MICHA/Codes/MusicPromptDescription/plots/prompt_desc.png", plot = final_plot,
+       width = 15, height = 7, dpi = 300)

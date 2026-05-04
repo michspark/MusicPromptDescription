@@ -23,8 +23,8 @@ DEFAULTS = {
         "output": r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_categories.csv",
     },
     "description": {
-        "input":  r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_data.csv",
-        "output": r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_categories_desc.csv",
+        "input":  r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english.csv",
+        "output": r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english_categories.csv",
     },
     "korean": {
         "input":  r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0428_korean.csv",
@@ -245,13 +245,12 @@ def classify(client: OpenAI, prompt: str, few_shot: list) -> Dict:
         {"role": "user", "content": f'Classify this music prompt:\n\n"{prompt}"'}
     ]
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-5.4",
         messages=messages,
         response_format={"type": "json_object"},
         temperature=0,
     )
     return json.loads(response.choices[0].message.content)
-
 
 
 def process_and_save(client: OpenAI, records: List[Dict], demo_keys: List[str],

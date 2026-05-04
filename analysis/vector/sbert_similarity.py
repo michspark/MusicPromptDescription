@@ -6,7 +6,7 @@ model = SentenceTransformer("all-mpnet-base-v2", device="cuda")
 # Description CSV: row 0 = col headers (truncated UUIDs), row 1 = question text,
 #                  row 2 = Qualtrics import IDs, row 3+ = actual responses
 
-desc_raw = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0428_eng.csv", header=None)
+desc_raw = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english.csv", header=None)
 desc_headers = desc_raw.iloc[0].tolist()          # column names
 desc_data    = desc_raw.iloc[3:].reset_index(drop=True)  # actual responses
 desc_data.columns = desc_headers
@@ -15,7 +15,7 @@ desc_data.columns = desc_headers
 prompt_df = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_data.csv")
 prompt_df["uuid_full"] = prompt_df["url"].str.extract(r"/songs/([a-f0-9-]+)")
 
-# ── Song columns only (skip metadata columns 0‥17) ──────────────────────────
+# Song columns only (skip metadata columns 0‥17)
 song_cols = desc_headers[18:]   # everything after 'Practice Ex'
 
 # Build a lookup: truncated_uuid → prompt text
@@ -28,7 +28,6 @@ for _, row in prompt_df.iterrows():
             prompt_lookup[col] = row["prompt"]
             break
 
-# ── Compute similarities ─────────────────────────────────────────────────────
 records = []
 
 for col in song_cols:
@@ -54,7 +53,7 @@ for col in song_cols:
         })
 
 out_df = pd.DataFrame(records)
-out_path = r"C:\Users\MICHA\Codes\MusicPromptDescription\latent\prompt_description_similarity.csv"
+out_path = r"C:\Users\MICHA\Codes\MusicPromptDescription\analysis\vector\prompt_description_similarity.csv"
 out_df.to_csv(out_path, index=False)
 
 print(f"Saved {len(out_df)} rows -> {out_path}")

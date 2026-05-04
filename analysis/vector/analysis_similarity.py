@@ -11,12 +11,10 @@ CATEGORIES = [
     "story/narrative/lyrics",
 ]
 
-# ── Load data ──────────────────────────────────────────────────────────────────
 ranked_df = pd.read_csv("song_similarity_ranked.csv")
-cat_df = pd.read_csv("../data/udio_sample_categories.csv")          # text labels → percentage
-density_df = pd.read_csv("../data/udio_sample_categories_density.csv")  # float 0-1 → density
+cat_df = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_categories.csv") # text labels → percentage
+density_df = pd.read_csv(r"C:\Users\MICHA\Codes\MusicPromptDescription\data\udio_sample_categories_density.csv")  # float 0-1 → density
 
-# ── Match truncated song_id to full UUID ───────────────────────────────────────
 def match_id(short_id, full_ids):
     for fid in full_ids:
         if fid.startswith(short_id):
@@ -32,7 +30,6 @@ if unmatched > 0:
 
 ranked_df = ranked_df.dropna(subset=["full_id"])
 
-# ── Split into high / low 25% by mean similarity ──────────────────────────────
 n = len(ranked_df)
 n_quarter = int(np.ceil(n * 0.25))
 
@@ -44,7 +41,7 @@ print(f"Total songs: {n}")
 print(f"High 25% (top {n_quarter}): ranks 1–{n_quarter}")
 print(f"Low  25% (bottom {n_quarter}): ranks {n - n_quarter + 1}–{n}")
 
-# ── Percentage (binary: is category filled?) ──────────────────────────────────
+# Percentage
 def is_filled(val):
     if pd.isna(val):
         return 0
@@ -57,11 +54,10 @@ for cat in CATEGORIES:
 high_pct = pct_df[pct_df["song_id"].isin(high_ids)][CATEGORIES]
 low_pct  = pct_df[pct_df["song_id"].isin(low_ids)][CATEGORIES]
 
-# ── Density ────────────────────────────────────────────────────────────────────
+# Density
 high_den = density_df[density_df["song_id"].isin(high_ids)][CATEGORIES]
 low_den  = density_df[density_df["song_id"].isin(low_ids)][CATEGORIES]
 
-# ── Print results ──────────────────────────────────────────────────────────────
 def print_stats(label, pct_group, den_group):
     print(f"\n{'='*65}")
     print(f"  {label}  (n={len(pct_group)})")
@@ -78,7 +74,6 @@ def print_stats(label, pct_group, den_group):
 print_stats("HIGH 25% (highest mean similarity)", high_pct, high_den)
 print_stats("LOW  25% (lowest  mean similarity)", low_pct,  low_den)
 
-# ── Difference (High - Low) ────────────────────────────────────────────────────
 print(f"\n{'='*65}")
 print("  DIFFERENCE: High 25% - Low 25%")
 print(f"{'='*65}")

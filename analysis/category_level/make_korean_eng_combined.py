@@ -4,8 +4,8 @@ import pandas as pd
 
 BASE = Path(__file__).parent.parent / "data"
 
-KOREAN_DENSITY = BASE / "0428_korean_categories_density.csv"
-ENG_DENSITY    = BASE / "0428_eng_categories_density.csv"
+KOREAN_DENSITY = r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0428_korean_categories_density.csv"
+ENG_DENSITY    = r"C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english_categories_density.csv"
 
 CATEGORIES = [
     "genre", "mood/emotion", "instrumentation",
@@ -42,7 +42,7 @@ long_df = pd.concat([
     to_long(eng_df,    "english", "e"),
 ], ignore_index=True)
 
-out_path = BASE / "long_korean_eng.csv"
+out_path = r"C:\Users\MICHA\Codes\MusicPromptDescription\data\long_korean_eng.csv"
 long_df.to_csv(out_path, index=False)
 print(f"Saved {len(long_df):,} rows -> {out_path}")
 print(f"  korean rows : {(long_df.corpus == 'korean').sum():,}")

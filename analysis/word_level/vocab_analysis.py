@@ -73,7 +73,7 @@ udio_df['uuid'] = udio_df['url'].apply(
 
 # English description (Qualtrics: 헤더 3줄 -> 1,2행 스킵)
 desc_df = pd.read_csv(
-    r'C:\Users\MICHA\Codes\MusicPromptDescription\data\0428_eng.csv',
+    r'C:\Users\MICHA\Codes\MusicPromptDescription\data\0502_english.csv',
     skiprows=[1, 2]
 )
 uuid_pattern = re.compile(r'^[0-9a-f]{8}-')
@@ -81,7 +81,7 @@ uuid_cols = [c for c in desc_df.columns if uuid_pattern.match(c)]
 
 # vocab_udio_prompt: count >= 5 단어 목록
 vocab_df = pd.read_csv(
-    r'C:\Users\MICHA\Codes\MusicPromptDescription\vocab\vocab_udio_prompt.csv'
+    r'C:\Users\MICHA\Codes\MusicPromptDescription\analysis\word_level\vocab_udio_prompt.csv'
 )
 target_words = set(vocab_df[vocab_df['count'] >= 5]['word'].tolist())
 print(f"  분석 대상 단어 수 (count >= 5): {len(target_words)}")
@@ -253,7 +253,7 @@ chi2_flat_df_10 = chi2_flat_df[
 # 6. 결과 출력 및 저장
 # ============================================================
 import os
-output_dir = r'C:\Users\MICHA\Codes\MusicPromptDescription\vocab'
+output_dir = r'C:\Users\MICHA\Codes\MusicPromptDescription\analysis\word_level'
 
 # --- Survival Rate 출력 ---
 print(f"\n{'='*65}")
